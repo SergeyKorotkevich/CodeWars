@@ -8,7 +8,6 @@
   They will not contain numerals.*/
 
 package TheFeastOfManyBeasts;
-
 public class TheFeastOfManyBeasts {
 
     public static boolean feast(String beast, String dish) {
@@ -17,10 +16,6 @@ public class TheFeastOfManyBeasts {
         char lastBeast = beast.toCharArray()[beast.length() - 1];
         char lastDish = dish.toCharArray()[dish.length() - 1];
 
-        if(firstBeast == firstDish && lastBeast == lastDish){
-            return true;
-        } else{
-            return false;
-        }
+        return firstBeast == firstDish && lastBeast == lastDish;
     }
 }
